@@ -1,1 +1,109 @@
+string_t intro, roadmap, name, name2, middle, middle2, middle3, end, end2, end3, end4, end5, end6, end7, end8, end9;
+int x=randint(0, 1000000);
+int y=randint(0, 2500);
+int z=randint(0, 150);
 
+// Road Map
+printf("Would you like to see the road map to see the option choices and where each option leads to? (Please answer with either Yes or No.) ");
+scanf("%s", &roadmap);
+if(roadmap=="Yes"){
+    printf("\nRoadmap: \nIntro Options: \n1. High Tech World (Everything from year 2350) \n2. Highly Antique World (Everything from year 1650) \n3. Mystery World (Everything based on luck) \n\nMiddle Options (High Tech World): \n1. Buy a UFO \n2. Buy a flying saucer \n3. Buy a high tech speed car \n\nEndings (High Tech World): \nBuy a UFO ---> UFO flys sucessfully. \n Buy a flying saucer ---> Flying saucer ran out of fuel and crashes in the ocean. Then, you are stuck with nowhere to go. \nBuy a high tech speed car ---> Speed car goes too fast and keeps crashing into buildings. You need to pay for damage done. \n\nMiddle Options (Highly Antique World): \n1. Buy antique wifi to watch TV \n2. Buy antique phone \n3. Buy antique tablet \n\nEndings (Highly Antique World): \nBuy antique wifi to watch TV ---> Wifi keeps glitching and doesn't work properly, so you can't watch TV. \nBuy anqitue phone ---> Phone is able to function well, even without wifi. \nBuy antique tablet ---> Tablet requires wifi and there is no wifi for tablet to work. \n\nMiddle Options (Mystery World): \n1. Buy a chest with cash (Cost: $100k  -  Chance to earn up to $1M) \n2. Buy a chest with gifts inside (Cost: $5k  -  Chance to earn up to 2500 gifts) \n3. Buy a chest with electronics (Cost: $100k  -  Chance to earn up to 100 electronics) \n\nEndings (Mystery World): \nBuy a chest with cash ---> Random amount of cash rewarded (up to $1M) \nBuy a chest with gifts ---> Random amount of gifts rewarded (up to 2500 gifts) \nBuy a chest with electronics ---> Random amount of electronics rewarded (up to 150 electronics) \n\nAlright, onto the story. \n");
+
+}
+
+printf("Please insert the name of a character who you would want to be in the story. ");
+scanf("%s", &name);
+
+printf("\n");
+
+printf("Please insert the name of another character who you would also want to be in the story. ");
+scanf("%s", &name2);
+
+printf("\n");
+
+// Intro
+printf("You, ", name, ", and ", name2, " have planned to go on a vacation during the summer. But, none of you have an idea on what place to travel to. You decided to ask a worker at the airport. The worker just ignored you and walked away. Right when you walked out of the airport, you found a packet with popular places to travel to. You, ", name, ", and ", name2, " have agreed to travel to one of these places. \nWould you travel to... \n1. A high tech world with everything from the year 2350. \n2. A highly antique world with everything from the year 1650. \n3. A mystery world where everything is based on luck. \n(Please choose the number that corresponds to where you would want to travel to) \n");
+scanf("%i", &intro);
+while(intro!="1" && intro!="2" && intro!="3"){
+    printf("Invalid response. Please try again. \nWould you travel to... \n1. A high tech world with everything from the year 2350. \n2. A highly antique world with everything from the year 1650. \n3. A mystery world where everything is based on luck. \n(Please choose the number that corresponds to where you would want to travel to) \n");
+    scanf("%i", &intro);
+}
+
+printf("\n");
+
+// Middle
+if(intro=="1"){
+    printf("Alright, you, ", name, ", and ", name2, " have decided to travel to a high tech world. You all then went and found a teleporter that teleports you there. You arrive at the high tech world and started walking around, exploring. You and your friends then entered a high tech dealership with insane vehicles. All of you then found three vehicles that you are interested in, but you only want to buy one of them. \nWould you buy...? \n1. A UFO. \n2. A Flying Saucer. \n3. A high tech speed car. \n(Please choose the number that corresponds to which car that you want to buy) \n");
+    scanf("%i", &middle);
+    while(middle!="1" && middle!="2" && middle!="3"){
+        printf("Invalid Response. Please try again. \nWould you buy...? \n1. A UFO. \n2. A Flying Saucer. \n3. A high tech speed car. \n(Please choose the number that corresponds to which car that you want to buy) \n");
+        scanf("%i", &middle);
+    }
+}
+
+// Middle2
+if(intro=="2"){
+    printf("Alright, you, ", name, ", and ", name2, " have decided to go to the highly antique world. You then went inside the teleporter and got teleported there. One look inside of the world, and you and your friends thought it looked very old. You decided to explore for a bit. After a while, you thought there wasn't really much to do, so you, ", name, ", and ", name2, " decided to go use electronics. You thought of some electronics you could use, and some you and your friends came up with were the highly antique TV in your house, a highly antique phone, and a highly antique tablet. \nWould you buy... \n1. Wifi so you could be able to watch your TV. \n2. A highly antique phone. \n3. A highly antique tablet. \n(Please choose the number that corresponds to which you would want to buy) \n");
+    scanf("%i", &middle2);
+    while(middle2!="1" && middle2!="2" && middle2!="3"){
+        printf("Invalid response. Please try again. \nWould you buy... \n1. A wifi router so you could be able to watch your TV. \n2. A highly antique phone. \n3. A highly antique tablet. \n(Please choose the number that corresponds to which you would want to buy) \n");
+        scanf("%i", &middle2);
+    }
+}
+
+// Middle3
+if(intro=="3"){
+    printf("Alright, you, ", name, ", and ", name2, " have decided to go to the mystery world. All of you then went inside the teleporter and arrived at the mystery world. You then decided to explore for a bit. As you and your friends were exploring, you noticed that there were chests all over the place. You went up to each of the chests and read the information written. Even though it was a little pricey, you, ", name, ", and ", name2, " wanted to open one chest. You had three chests that you were interested in. \nWould you buy and open... \n1. A chest with cash inside (Cost: $100k  -  Earn up to $1M) \n2. A chest with gifts inside (Cost: $15k  -  Earn up to 2500 gifts) \n3. A chest with electronics inside (Cost: $100k  - Earn up to 150 electronics) \n(Please choose the corresponding number to which chest you would want to buy and open) \n");
+    scanf("%i", &middle3);
+    while(middle3!="1" && middle3!="2" && middle3!="3"){
+        printf("Invalid response. Please try again. \nWould you buy and open... \n1. A chest with cash inside (Cost: $100k  -  Earn up to $1M) \n2. A chest with gifts inside (Cost: $15k  -  Earn up to 2500 gifts) \n3. A chest with electronics inside (Cost: $100k  - Earn up to 150 electronics) \n(Please choose the corresponding number to which chest you would want to buy and open) \n");
+        scanf("%i", &middle3);
+    }
+}
+
+printf("\n");
+
+// End
+if(middle=="1"){
+    printf("Nice, you, ", name, ", and ", name2, " have decided to buy a UFO. You then got inside of your UFO and drove you and your friends around the high tech world. You tested some unique features of the UFO along the way. The UFO seemed to be in really good quality. You, ", name, ", and ", name2, " believed that you bought the right vehicle at the high tech car dealership.\n");
+}
+
+// End2
+if(middle=="2"){
+    printf("Nice, you, ", name, ", and ", name2, " have decided to buy a flying saucer. All of you then hopped onto the flying saucer to test drive it. When driving it, you realized that everything was going fine and smooth. But then, you saw that it only had 1 percent fuel left. You then tried to hurry to a high tech gas station but it was too late. On the way there, the flying saucer ran out of fuel and crashed into the ocean. You, ", name, ", and ", name2, " are now stuck in the ocean with nowhere to go.\n");
+}
+
+// End3
+if(middle=="3"){
+    printf("Nice, you, ", name, ", and ", name2, " have decided to buy a high tech speed car. You and your friends then got inside of the speed car to give it a drive. It started off doing really well. You then wanted the car to speed up a bit since you thought it was going kind of slow. So you sped it up and the high tech speed car went out of control. It crashed into many buildings. The police then came moments later and told you, ", name, ", and ", name2, " that you would have to pay for all of the damage that you caused. \n");
+}
+
+// End4
+if(middle2=="1"){
+    printf("Okay, you, ", name, ", and ", name2, " have decided to buy a wifi router. After you bought the wifi router, you went to your house and inserted the wifi information to your highly antique TV. You tried turning on the TV to watch, but it just wouldn't work. You, ", name, ", and ", name2, " saw something weird happening to the wifi router. It was glitching and pieces of it were breaking. So you and your friends then realized that the wifi router was really useless and you couldn't watch the TV like you wanted to.");
+}
+
+// End5
+if(middle2=="2"){
+    printf("Okay, you, ", name, ", and ", name2, " have decided to buy each of you a highly antique phone. All of you then went home to use your phones. After using them for a bit, you and your friends were happy. You then decided to keep using the highly antique phone for some more. After a while, you, ", name, ", and ", name2, " thought it was really worth it buying the highly antique phone, as it made all of you enjoy your time.");
+}
+
+// End6
+if(middle2=="3"){
+printf("Okay, you, ", name, ", and ", name2, " have decided to buy a highly antique tablet for each of you. All of you then went home to use the tablets. At first, everything seemed just fine as you got your tablet ready. But then, the tablets won't work for some reason. You and your friends got confused why it wouldn't work. Then, all of you remembered that tablets needed wifi, and there is no wifi router in the house to use the tablets.");
+}
+
+// End7
+if(middle3=="1"){
+    printf("Alright, you, ", name, ", and ", name2, " have decided to open up the chest with cash inside. You then inserted $100k worth to open up the chest. Then, the chest opened up. You then looked inside and counted all of the cash that was inside. Once you have counted up all of the cash, you and your friends have realized that you have received $", x, " from the chest that you spent $100k to open.");
+}
+
+// End8
+if(middle3=="2"){
+printf("Alright, you, ", name, ", and ", name2, " have decided to open up the chest with gifts inside. You then inserted $15k worth to open up the chest. Then, the chest opened up. You then looked inside and counted all of the gifts that were inside. Once you have counted up all of the gifts, you and your friends have realized that you have received ", y, " gifts from the chest that you spent $15k to open.");
+}
+
+// End9
+if(middle3=="3"){
+printf("Alright, you, ", name, ", and ", name2, " have decided to open up the chest with electronics inside. You then inserted $100k worth to open up the chest. Then, the chest opened up. You then looked inside and counted all of the electronics that were inside. Once you have counted up all of the electronics, you and your friends have realized that you have received ", z, " electronics from the chest that you spent $100k to open.");
+}
